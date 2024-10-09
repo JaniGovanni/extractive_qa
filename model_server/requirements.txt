@@ -1,0 +1,9 @@
+fastapi==0.112.2
+uvicorn==0.30.6
+pydantic==2.8.2
+torch==2.4.0
+s3fs
+boto3
+aiobotocore
+transformers==4.41.2
+flask==2.3.2

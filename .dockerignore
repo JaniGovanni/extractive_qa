@@ -1,0 +1,3 @@
+.env
+app/deprecated
+model_server/api_test_call.py

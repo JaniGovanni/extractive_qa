@@ -1,0 +1,13 @@
+FROM python:3.11-slim
+
+WORKDIR /application
+
+COPY ./app /application/app
+COPY app_website_chat.py /application/
+COPY test_qa_pipeline.py /application/
+
+RUN pip install --no-cache-dir -r /application/app/requirements.txt
+
+EXPOSE 8501
+
+CMD ["streamlit", "run", "app_website_chat.py"]

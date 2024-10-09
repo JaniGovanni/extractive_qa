@@ -1,0 +1,24 @@
+version: '3.8'
+
+services:
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile.api
+    ports:
+      - "8503:8503"
+    environment:
+      - API_ENDPOINT=http://api:8503/api/v1/question_answering
+      - OLLAMA_URL=http://host.docker.internal:11434
+
+  streamlit:
+    build:
+      context: .
+      dockerfile: Dockerfile.streamlit
+    ports:
+      - "8501:8501"
+    environment:
+      - API_ENDPOINT=http://api:8503/api/v1/question_answering
+      - OLLAMA_URL=http://host.docker.internal:11434
+    depends_on:
+      - api

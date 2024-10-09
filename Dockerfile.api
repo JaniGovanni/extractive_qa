@@ -1,0 +1,15 @@
+FROM python:3.11-slim
+
+# Set the working directory to /app/model_server
+WORKDIR /app/model_server
+
+# Copy the model_server directory contents into the container
+COPY model_server .
+
+# Install requirements from the current directory (which is now model_server)
+RUN pip install --no-cache-dir -r requirements.txt
+
+EXPOSE 8503
+
+# Run api_server.py from the current directory
+CMD ["python", "app.py"]

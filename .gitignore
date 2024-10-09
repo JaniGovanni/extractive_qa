@@ -3,3 +3,7 @@ __pycache__
 .venv
 instance
 .DS_Store
+messages
+app/deprecated
+test.ipynb
+model_server/trained_model_extr_qa_1

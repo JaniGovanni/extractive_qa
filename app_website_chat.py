@@ -56,7 +56,8 @@ else:
         ]
     context = get_document_from_url(website_url)
     context_content = context[0].page_content
-    st.write(API_ENDPOINT)
+    # debugging
+    # st.write(API_ENDPOINT)
     user_query = st.chat_input("Type your question here...")
 
     if user_query is not None and user_query != "":

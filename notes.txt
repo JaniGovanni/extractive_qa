@@ -1,0 +1,7 @@
+* Implementation of a complete end-to-end MLOps pipeline for an extractive QA system
+* Fine-tuned a DistilBERT model for extractive question answering on developement server
+* Used AWS S3 for storing the fine-tuned model
+* Builded a Flask API for calling the model
+* Implemented integration tests for the API
+* Developed a Streamlit interface for user interaction
+* Containerized the application using Docker and deployed it on an AWS EC2 server

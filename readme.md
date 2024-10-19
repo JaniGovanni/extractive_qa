@@ -2,8 +2,19 @@
 
 ## Overview
 
-Hello there!
-This is my first hosted project on Github. It implements a complete Extractive Question Answering ML pipeline. Although generative QA systems (RAG) are currently receiving the most attention, it is also worth taking a look at extractive QA systems. There have some andvantages over generative QA systems. Also I found the approach quit interesting, because it transforms the task into an classification problem. I implemented the fine-tuning of a DistilBERT model for this task. I mainly oriented me an a course on udemy (Data Science: Transformers for Natural Language Processing) by Lazy Programmer Inc, which I can highly recommend. You can find the code in the training.ipynb notebook. The code might be a little but tricky to understand, but I heavily commented it and its also quit interesting. For building a complete MLOps pipeline, I uploaded the trained model on AWS S3, builded a streamlit interface, builded a flask api for calling the model and Dockerized it all. Further I have deployed it on an AWS EC2 server. When you want to test it, you can contact me, than I will launch the instance. You can also clone the repo and run it locally. It doesnt require much CPU or GPU power. More to this in the following sections.
+Welcome to one of my first GitHub projects! This repository implements a complete Extractive Question Answering (QA) ML pipeline. While generative QA systems (used inRAG) are currently trending, extractive QA systems offer unique advantages and present an interesting approach by transforming the task into a classification problem.
+
+Key features of this project:
+- Fine-tuned DistilBERT model for extractive QA
+- Complete MLOps pipeline including:
+  - Model training (see `training.ipynb`)
+  - Storage of the tuned model in AWS S3 storage
+  - Streamlit user interface
+  - Flask API for model inference
+  - Docker containerization
+  - Deployment on AWS EC2
+
+To test the live deployment, please contact me to launch the EC2 instance. Alternatively, you can clone the repository and run it locally with minimal CPU/GPU requirements.
 
 ## Project Structure
 ```

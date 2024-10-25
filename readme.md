@@ -50,8 +50,10 @@ To test the live deployment, please contact me to launch the EC2 instance. Alter
 ## Setup and Running
 
 1. Ensure Docker and Docker Compose are installed.
-2. Run `docker-compose up --build` in the project root.
-3. Access the API at `http://localhost:8503` and the Streamlit interface at `http://localhost:8501`.
+2. Ensure that ollama is installed, running and llama3.2 is pulled.
+3. If not, you can simply run the install_ollama.sh script if you are on a mac or linux machine. If you are on windows, you have to install it manually.
+4. Run `docker-compose up --build` in the project root.
+5. Access the API at `http://localhost:8503` and the Streamlit interface at `http://localhost:8501`.
 
 Or run the start_app.sh script if you have pulled the repo and installed all dependencies.
 
